@@ -30,4 +30,10 @@ var PurchaseCreator = artifacts.require("PurchaseCreator");
 var SimplePurchase = artifacts.require("SimplePurchase");
 
 //IDEAL PATH
-contract('PurchaseCreator', function())
+contract('PurchaseCreator', function(owner) {
+    it("should have Switcheroo address as owner", function() {
+        return PurchaseCreator.deployed().then(function(instance) {
+            return instance.PurchaseCreator.call()
+        });
+    });
+});

@@ -3,6 +3,7 @@ import "./SimplePurchase.sol";
 
 //----------------------------------------------------------------
 //FACTORY CONTRACT - Master contract that creates individual purchase contracts
+//TODO add ability to call PurchaseData struct using PurchaseId and get values
 
 //Info on mapping: https://ethereum.stackexchange.com/questions/9893/how-does-mapping-in-solidity-work#9894
 //Info on contract creation: http://solidity.readthedocs.io/en/develop/contracts.html
